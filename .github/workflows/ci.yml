@@ -13,7 +13,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.7
       - name: Install dependencies
         run: npm install
       - name: Lint
@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.7
       - name: Install dependencies
         run: npm install
       - name: Build
@@ -31,7 +31,7 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.7
       - name: Install dependencies
         run: npm install
       - name: Run Unit Tests
@@ -40,7 +40,7 @@ jobs:
   e2e-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.7
       - name: Install dependencies
         run: npm install
       - name: Run E2E Tests
